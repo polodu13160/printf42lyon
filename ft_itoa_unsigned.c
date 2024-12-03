@@ -6,7 +6,7 @@
 /*   By: pde-petr <pde-petr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 20:39:21 by pde-petr          #+#    #+#             */
-/*   Updated: 2024/12/03 21:00:21 by pde-petr         ###   ########.fr       */
+/*   Updated: 2024/12/03 22:51:45 by pde-petr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_itoa_unsigned(unsigned int nb)
 	malloc_str = ft_calloc(i + 1, sizeof(char));
 	if (!malloc_str)
 		return (NULL);
-	while (i >= 0)
+	while (i > 0)
 	{
 		malloc_str[--i] = (nb % 10) + 48;
 		nb = (nb / 10);
