@@ -6,7 +6,7 @@
 /*   By: pde-petr <pde-petr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 15:53:19 by pde-petr          #+#    #+#             */
-/*   Updated: 2024/12/03 22:16:42 by pde-petr         ###   ########.fr       */
+/*   Updated: 2024/12/03 22:48:43 by pde-petr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,33 +41,33 @@ int	ft_printf(const char *format, ...)
 
 // int	main(void)
 // {
-// 	// printf(" | ft_pri : %d\n", ft_printf(" NULL %", "dddddd"));
-// 	// printf(" | printf : %d\n", printf(" NULL %", "dddddd"));
-// 	// printf(" | ft_pri : %d\n", ft_printf("s : Hello %s", "World"));
-// 	// printf(" | printf : %d\n", printf("s : Hello %s", "World"));
-// 	// printf(" | ft_pri : %d\n", ft_printf("d : Hello %d", INT_MAX));
-// 	// printf(" | printf : %d\n", printf("d : Hello %d", INT_MAX));
-// 	// printf(" | ft_pri : %d\n", ft_printf("i : Hello %i", INT_MAX));
-// 	// printf(" | printf : %d\n", printf("i : Hello %i", INT_MAX));
-// 	// printf(" | ft_pri : %d\n", ft_printf("u : Hello %u", INT_MAX));
-// 	// printf(" | printf : %d\n", printf("u : Hello %u", INT_MAX));
-// 	// printf(" | ft_pri : %d\n", ft_printf("x : Hello %x", INT_MAX));
-// 	// printf(" | printf : %d\n", printf("x : Hello %x", INT_MAX));
-// 	// printf(" | ft_pri : %d\n", ft_printf("X : Hello %X", INT_MAX));
-// 	// printf(" | printf : %d\n", printf("X : Hello %X", INT_MAX));
-// 	// printf(" | ft_pri : %d\n", ft_printf("p : Hello %p", &ft_printf));
-// 	// printf(" | printf : %d\n", printf("p : Hello %p", &ft_printf));
-// 	// ft_printf(" ft_printf : %d\n", ft_printf(NULL));
-// 	// ft_printf(" printf : %d\n", printf(NULL));
-// 	// printf(" | ft_pri : %d\n", ft_printf("d : Hello %d", INT_MIN));
-// 	// printf(" | printf : %d\n", printf("d : Hello %d", INT_MIN));
-// 	// printf(" | ft_pri : %d\n", ft_printf("i : Hello %i", INT_MIN));
-// 	// printf(" | printf : %d\n", printf("i : Hello %i", INT_MIN));
-// 	// printf(" | ft_pri : %d\n", ft_printf("u : Hello %u", INT_MIN));
-// 	// printf(" | printf : %d\n", printf("u : Hello %u", INT_MIN));
-// 	// printf(" | ft_pri : %d\n", ft_printf("x : Hello %x", INT_MIN));
-// 	// printf(" | printf : %d\n", printf("x : Hello %x", INT_MIN));
-// 	// printf(" | ft_pri : %d\n", ft_printf("X : Hello %X", INT_MIN));
-// 	// printf(" | printf : %d\n", printf("X : Hello %X", INT_MIN));
-// 	// return (0);
+// 	printf(" | ft_pri : %d\n", ft_printf(" NULL %", "dddddd"));
+// 	printf(" | printf : %d\n", printf(" NULL %", "dddddd"));
+// 	printf(" | ft_pri : %d\n", ft_printf("s : Hello %s", "World"));
+// 	printf(" | printf : %d\n", printf("s : Hello %s", "World"));
+// 	printf(" | ft_pri : %d\n", ft_printf("d : Hello %d", INT_MAX));
+// 	printf(" | printf : %d\n", printf("d : Hello %d", INT_MAX));
+// 	printf(" | ft_pri : %d\n", ft_printf("i : Hello %i", INT_MAX));
+// 	printf(" | printf : %d\n", printf("i : Hello %i", INT_MAX));
+// 	printf(" | ft_pri : %d\n", ft_printf("u : Hello %u", INT_MAX));
+// 	printf(" | printf : %d\n", printf("u : Hello %u", INT_MAX));
+// 	printf(" | ft_pri : %d\n", ft_printf("x : Hello %x", INT_MAX));
+// 	printf(" | printf : %d\n", printf("x : Hello %x", INT_MAX));
+// 	printf(" | ft_pri : %d\n", ft_printf("X : Hello %X", INT_MAX));
+// 	printf(" | printf : %d\n", printf("X : Hello %X", INT_MAX));
+// 	printf(" | ft_pri : %d\n", ft_printf("p : Hello %p", &ft_printf));
+// 	printf(" | printf : %d\n", printf("p : Hello %p", &ft_printf));
+// 	ft_printf(" ft_printf : %d\n", ft_printf(NULL));
+// 	ft_printf(" printf : %d\n", printf(NULL));
+// 	printf(" | ft_pri : %d\n", ft_printf("d : Hello %d", INT_MIN));
+// 	printf(" | printf : %d\n", printf("d : Hello %d", INT_MIN));
+// 	printf(" | ft_pri : %d\n", ft_printf("i : Hello %i", INT_MIN));
+// 	printf(" | printf : %d\n", printf("i : Hello %i", INT_MIN));
+// 	printf(" | ft_pri : %d\n", ft_printf("u : Hello %u", INT_MIN));
+// 	printf(" | printf : %d\n", printf("u : Hello %u", INT_MIN));
+// 	printf(" | ft_pri : %d\n", ft_printf("x : Hello %x", INT_MIN));
+// 	printf(" | printf : %d\n", printf("x : Hello %x", INT_MIN));
+// 	printf(" | ft_pri : %d\n", ft_printf("X : Hello %X", INT_MIN));
+// 	printf(" | printf : %d\n", printf("X : Hello %X", INT_MIN));
+// 	return (0);
 // }
