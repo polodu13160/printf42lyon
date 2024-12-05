@@ -3,7 +3,6 @@ CC = cc
 FLAGS = -Wall -Wextra -Werror -I $(LIBFT_DIR)
 NAME = libftprintf.a
 SRCS = ft_printf_format.c ft_printf.c ft_itoa_unsigned.c ft_print_hexa.c
-OBJLIBFT = $(SRCS:libft/%.c=libft/%.o)
 LIBFT_DIR = ./libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
