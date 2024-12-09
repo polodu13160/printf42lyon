@@ -6,13 +6,13 @@
 /*   By: pde-petr <pde-petr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 23:00:24 by pde-petr          #+#    #+#             */
-/*   Updated: 2024/12/03 23:01:38 by pde-petr         ###   ########.fr       */
+/*   Updated: 2024/12/09 15:04:11 by pde-petr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printhexa(unsigned long int hexa, char type)
+int	ft_printhexa(unsigned int hexa, char type)
 {
 	char	*hexa_tab;
 

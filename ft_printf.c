@@ -6,7 +6,7 @@
 /*   By: pde-petr <pde-petr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 15:53:19 by pde-petr          #+#    #+#             */
-/*   Updated: 2024/12/03 23:03:46 by pde-petr         ###   ########.fr       */
+/*   Updated: 2024/12/09 15:06:49 by pde-petr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,8 @@ int	ft_printf(const char *format, ...)
 // 	printf(" | printf : %d\n", printf("i : Hello %i", INT_MAX));
 // 	printf(" | ft_pri : %d\n", ft_printf("u : Hello %u", INT_MAX));
 // 	printf(" | printf : %d\n", printf("u : Hello %u", INT_MAX));
-// 	printf(" | ft_pri : %d\n", ft_printf("x : Hello %x", INT_MAX));
-// 	printf(" | printf : %d\n", printf("x : Hello %x", INT_MAX));
+// 	printf(" | ft_pri : %d\n", ft_printf("x : Hello %x", LONG_MAX));
+// 	printf(" | printf : %d\n", printf("x : Hello %x", LONG_MAX));
 // 	printf(" | ft_pri : %d\n", ft_printf("X : Hello %X", INT_MAX));
 // 	printf(" | printf : %d\n", printf("X : Hello %X", INT_MAX));
 // 	printf(" | ft_pri : %d\n", ft_printf("p : Hello %p", &ft_printf));
