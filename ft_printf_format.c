@@ -6,7 +6,7 @@
 /*   By: pde-petr <pde-petr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 16:05:33 by pde-petr          #+#    #+#             */
-/*   Updated: 2024/12/03 23:00:34 by pde-petr         ###   ########.fr       */
+/*   Updated: 2024/12/09 16:33:28 by pde-petr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static int	check_null_pointer(void *pointer)
 {
 	if (!pointer)
 		return (write(1, "(nil)", 5));
-	return (write(1, "0x", 2) + ft_printhexa((unsigned long)pointer, 'x'));
+	return (write(1, "0x", 2) + ft_printhexa((unsigned long int)pointer, 'x'));
 }
 
 static int	check_null_string(char *str)

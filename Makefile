@@ -1,4 +1,4 @@
-.PHONY = bonus all clean fclean re
+.PHONY = all clean fclean re
 CC = cc
 FLAGS = -Wall -Wextra -Werror -I $(LIBFT_DIR)
 NAME = libftprintf.a
@@ -6,21 +6,22 @@ SRCS = ft_printf_format.c ft_printf.c ft_itoa_unsigned.c ft_print_hexa.c
 LIBFT_DIR = ./libft
 LIBFT = $(LIBFT_DIR)/libft.a
 
-OBJS = ${SRCS:.c=.o}
-OBJS_B = ${SRCS_B:.c=.o}
+OBJS = $(SRCS:.c=.o)
 
+all: $(NAME)
 %.o: %.c libftprintf.h $(LIBFT)
 	${CC} ${FLAGS} -c $< -o $@
 
-$(NAME): $(LIBFT) $(OBJS)
+
+$(LIBFT): ./libft/*.c ./libft/libft.h
+	$(MAKE) -C $(LIBFT_DIR)
+$(NAME): $(LIBFT) $(OBJS) Makefile $(LIBFT_DIR)/Makefile
 	cp $(LIBFT) $(NAME)
 	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
-$(LIBFT):
-	$(MAKE) -C $(LIBFT_DIR)
 
 
-all: ${NAME}
+
 clean:
 	rm -f $(OBJS)
 	$(MAKE) -C $(LIBFT_DIR) clean
@@ -30,6 +31,7 @@ fclean: clean
 re: 
 	${MAKE} fclean 
 	${MAKE} all	
+
 
 
 
