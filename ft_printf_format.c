@@ -6,7 +6,7 @@
 /*   By: pde-petr <pde-petr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 16:05:33 by pde-petr          #+#    #+#             */
-/*   Updated: 2024/12/09 16:33:28 by pde-petr         ###   ########.fr       */
+/*   Updated: 2024/12/11 16:53:40 by pde-petr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	ft_printf_format(char format, va_list arg)
 	if (format == 's')
 		return (check_null_string(va_arg(arg, char *)));
 	if (format == 'i' || format == 'd')
-		return (ft_putstr_fd(ft_itoa(va_arg(arg, int)), 1));
+		return (ft_putnbr_fd(va_arg(arg, int), 1));
 	if (format == 'x')
 		return (ft_printhexa(va_arg(arg, unsigned int), format));
 	if (format == 'X')
