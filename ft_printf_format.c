@@ -6,7 +6,7 @@
 /*   By: pde-petr <pde-petr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 16:05:33 by pde-petr          #+#    #+#             */
-/*   Updated: 2024/12/11 16:53:40 by pde-petr         ###   ########.fr       */
+/*   Updated: 2024/12/12 03:07:44 by pde-petr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_printf_format(char format, va_list arg)
 	if (format == 'X')
 		return (ft_printhexa(va_arg(arg, unsigned int), format));
 	if (format == 'u')
-		return (ft_putstr_fd(ft_itoa_unsigned(va_arg(arg, unsigned int)), 1));
+		return (ft_putnbr_fd(va_arg(arg, unsigned int), 1));
 	if (format == '%')
 		return (write(1, "%", 1));
 	if (format == 'p')
