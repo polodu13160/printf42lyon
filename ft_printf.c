@@ -6,7 +6,7 @@
 /*   By: pde-petr <pde-petr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 15:53:19 by pde-petr          #+#    #+#             */
-/*   Updated: 2024/12/12 03:32:51 by pde-petr         ###   ########.fr       */
+/*   Updated: 2024/12/12 03:35:12 by pde-petr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,8 @@ int	ft_printf(const char *format, ...)
 	return (count);
 }
 
-#include <limits.h>
-#include <stdio.h>
-
+// #include <limits.h>
+// #include <stdio.h>
 // int	main(void)
 // {
 // 	printf(" | ft_pri : %d\n", ft_printf(" NULL % thkjhuihu", "dddddd"));
