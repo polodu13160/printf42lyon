@@ -14,7 +14,7 @@
 # define FT_PRINTF_H
 
 # include "libft/libft.h"
-# include <stdarg.h>git add ft_printf
+# include <stdarg.h>
 
 # define HEXACAPS "0123456789ABCDEF"
 # define HEXAMIN "0123456789abcdef"
