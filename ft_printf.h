@@ -14,12 +14,13 @@
 # define FT_PRINTF_H
 
 # include "libft/libft.h"
+# include <stdarg.h>git add ft_printf
 
 # define HEXACAPS "0123456789ABCDEF"
 # define HEXAMIN "0123456789abcdef"
 
-int		ft_printhexa(unsigned long int hexa, char type);
-int		ft_printf_format(char format, va_list arg);
-int		ft_printf(const char *format, ...);
+int	ft_printhexa(unsigned long int hexa, char type);
+int	ft_printf_format(char format, va_list arg);
+int	ft_printf(const char *format, ...);
 
 #endif
