@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_format.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pde-petr <pde-petr@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pauldepetrini <pauldepetrini@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 16:05:33 by pde-petr          #+#    #+#             */
-/*   Updated: 2024/12/12 03:07:44 by pde-petr         ###   ########.fr       */
+/*   Updated: 2024/12/22 11:51:33 by pauldepetri      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,23 +26,23 @@ static int	check_null_string(char *str)
 	return (ft_putstr_fd(str, 1));
 }
 
-int	ft_printf_format(char format, va_list arg)
+int	ft_printf_format(char format, va_list *arg)
 {
 	if (format == 'c')
-		return (ft_putchar_fd(va_arg(arg, int), 1));
+		return (ft_putchar_fd(va_arg(*arg, int), 1));
 	if (format == 's')
-		return (check_null_string(va_arg(arg, char *)));
+		return (check_null_string(va_arg(*arg, char *)));
 	if (format == 'i' || format == 'd')
-		return (ft_putnbr_fd(va_arg(arg, int), 1));
+		return (ft_putnbr_fd(va_arg(*arg, int), 1));
 	if (format == 'x')
-		return (ft_printhexa(va_arg(arg, unsigned int), format));
+		return (ft_printhexa(va_arg(*arg, unsigned int), format));
 	if (format == 'X')
-		return (ft_printhexa(va_arg(arg, unsigned int), format));
+		return (ft_printhexa(va_arg(*arg, unsigned int), format));
 	if (format == 'u')
-		return (ft_putnbr_fd(va_arg(arg, unsigned int), 1));
+		return (ft_putnbr_fd(va_arg(*arg, unsigned int), 1));
 	if (format == '%')
 		return (write(1, "%", 1));
 	if (format == 'p')
-		return (check_null_pointer(va_arg(arg, void *)));
+		return (check_null_pointer(va_arg(*arg, void *)));
 	return (write(1, &format, 1));
 }

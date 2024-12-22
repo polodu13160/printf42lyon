@@ -10,7 +10,7 @@ OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-%.o: %.c libftprintf.h $(LIBFT)
+%.o: %.c $(LIBFT)
 	${CC} ${FLAGS} -c $< -o $@
 
 
